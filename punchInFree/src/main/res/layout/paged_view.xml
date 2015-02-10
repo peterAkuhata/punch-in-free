@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+	 
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:greendroid="http://schemas.android.com/apk/res/com.aku.apps.punchin.free"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="bottom"
+	    android:orientation="vertical">
+	    
+		<com.google.ads.AdView
+		    android:id="@+id/adView"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    ads:adSize="BANNER"
+		    ads:adUnitId="@string/publisher_id"
+		    ads:loadAdOnCreate="true"
+		    ads:testDevices="@string/admob_device_id" 
+		    android:layout_alignParentTop="true"/>
+	    
+	    <LinearLayout
+	        android:id="@+id/bottom_panel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/action_bar_background">
+
+	        <Button
+	            android:id="@+id/button_event_list"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/gd_action_bar_item"
+	            android:paddingLeft="6dp"
+	            android:paddingRight="6dp"
+	            android:text="@string/label_event_log"
+	            android:textColor="#fff"
+	            android:textStyle="bold" />
+
+	        <ImageView
+	            android:id="@+id/ImageView01"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/action_bar_divider" 
+	            android:layout_gravity="center_vertical"
+	            android:contentDescription="@string/label_empty"/>
+
+	        <Button
+	            android:id="@+id/button_daily_notes"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/gd_action_bar_item"
+	            android:paddingLeft="6dp"
+	            android:paddingRight="6dp"
+	            android:text="@string/label_daily_note"
+	            android:textColor="#fff"
+	            android:textStyle="bold" />
+
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/action_bar_divider" 
+	            android:layout_gravity="center_vertical"
+	            android:contentDescription="@string/label_empty"/>
+
+	        <Button
+	            android:id="@+id/button_add_task"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/gd_action_bar_item"
+	            android:paddingLeft="6dp"
+	            android:paddingRight="6dp"
+	            android:text="@string/label_add_task"
+	            android:textColor="#fff"
+	            android:textStyle="bold" />
+
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/action_bar_divider" 
+	            android:layout_gravity="center_vertical"
+	            android:contentDescription="@string/label_empty"/>
+	        
+	    </LinearLayout>
+
+	    <greendroid.widget.PagedView
+	        android:id="@+id/paged_view"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_above="@+id/bottom_panel"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/adView">
+
+	    </greendroid.widget.PagedView>
+
+	</RelativeLayout>
+
+</merge>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aku.apps.punchin.free.widgets.greendroid.EventListItemView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+    android:layout_width="wrap_content" 
+	android:paddingLeft="?attr/gdItemViewPreferredPaddingLeft"
+	android:paddingTop="?attr/gdItemViewPreferredPaddingLeft"
+	android:paddingBottom="?attr/gdItemViewPreferredPaddingLeft"
+	android:paddingRight="?attr/gdItemViewPreferredPaddingLeft"
+	android:weightSum="1.0"
+	android:listSelector="@drawable/gd_action_bar_item">
+	
+	<TextView
+		style=""
+		android:id="@+id/description_text"
+        android:layout_height="fill_parent" 
+        android:layout_width="0px"
+		android:layout_weight=".5" 
+		android:gravity="left|center_vertical"
+		android:ellipsize="end"/>
+
+	<RelativeLayout
+	    android:id="@+id/relativeLayout1"
+	    android:layout_width="0px"
+	    android:layout_height="wrap_content" 
+	    android:layout_weight=".5">
+
+		<TextView
+		    android:id="@+id/in_text"
+		    android:layout_width="35dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/label_in_colon" 
+	     	android:gravity="left|center_vertical"/>
+
+		<TextView
+		    android:id="@+id/punch_in_text"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/in_text"
+		    android:paddingLeft="5dp" />
+
+		<TextView
+		    android:id="@+id/out_text"
+		    android:layout_width="35dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_below="@+id/in_text"
+		    android:gravity="left|center_vertical"
+		    android:text="@string/label_out_colon" />
+
+		<TextView
+		    android:id="@+id/punch_out_text"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_below="@id/punch_in_text"
+		    android:layout_toRightOf="@+id/out_text"
+		    android:paddingLeft="5dp" />
+
+	</RelativeLayout>
+	
+</com.aku.apps.punchin.free.widgets.greendroid.EventListItemView>

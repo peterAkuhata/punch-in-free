@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.aku.apps.punchin.free.widgets.greendroid.DraggableListView
+        android:id="@+id/listview_tasks"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textbox_filter" 
+        android:listSelector="@drawable/gd_action_bar_item">
+
+    </com.aku.apps.punchin.free.widgets.greendroid.DraggableListView>
+
+    <EditText
+        android:id="@+id/textbox_filter"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:hint="@string/hint_filter_tasks"
+        android:paddingRight="70dp" 
+        android:paddingLeft="10dp" 
+        android:inputType="text|textAutoComplete|textCapSentences"
+        android:maxLength="100" >
+    </EditText>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="60dp"
+        android:layout_height="69dp"
+        android:layout_alignBottom="@+id/textbox_filter"
+        android:layout_alignParentTop="true" android:background="@drawable/action_bar_background" android:layout_marginBottom="8dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/button_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gd_action_bar_item"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gd_action_bar_item"
+            android:src="@drawable/gd_action_bar_search" 
+            android:contentDescription="@string/label_empty"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/textbox_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:autoText="false"
+            android:capitalize="none"
+            android:gravity="fill_horizontal"
+            android:hint="@string/hint_enter_email"
+            android:inputType="textEmailAddress"
+            android:scrollHorizontally="true"
+            android:selectAllOnFocus="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:greendroid="http://schemas.android.com/apk/res/com.aku.apps.punchin.free"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="bottom"
+	    android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:id="@+id/bottom_panel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/action_bar_background">
+
+	        <Button
+	            android:id="@+id/button_save"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/gd_action_bar_item"
+	            android:paddingLeft="6dp"
+	            android:paddingRight="6dp"
+	            android:text="@string/label_save"
+	            android:textColor="#fff"
+	            android:textStyle="bold" />
+
+	        <ImageView
+	            android:id="@+id/ImageView01"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/action_bar_divider" 
+	            android:layout_gravity="center_vertical"
+	            android:contentDescription="@string/label_empty"/>
+
+	        <Button
+	            android:id="@+id/button_cancel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/gd_action_bar_item"
+	            android:paddingLeft="6dp"
+	            android:paddingRight="6dp"
+	            android:text="@string/label_cancel"
+	            android:textColor="#fff"
+	            android:textStyle="bold" />
+
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/action_bar_divider" 
+	            android:layout_gravity="center_vertical"
+	            android:contentDescription="@string/label_empty"/>
+
+	    </LinearLayout>
+    
+	    <EditText
+	        android:id="@+id/textbox_notes"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_above="@+id/bottom_panel"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:hint="@string/hint_daily_notes_here" >
+	        <requestFocus />
+	    </EditText>
+
+	</RelativeLayout>
+
+</merge>

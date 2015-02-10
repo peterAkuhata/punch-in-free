@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/widget_margin">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/stopwatchContainer"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/clientTextview"
+            android:layout_toRightOf="@+id/stopwatchContainer" android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/taskTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_no_task_selected"
+                android:textColor="#fff" android:background="@drawable/widget_text_bg" android:paddingBottom="5dp" android:paddingTop="5dp" android:paddingLeft="7dp" android:paddingRight="7dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/stopwatchContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/stopwatchImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/widget_stopwatch_states"
+                android:contentDescription="@string/label_empty"/>
+
+            <ImageView
+                android:id="@+id/timeImageView"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/label_empty" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/clientTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/stopwatchContainer"
+            android:text="@string/label_no_client_selected"
+            android:textColor="#fff"
+            android:textStyle="bold" android:padding="7dp" android:background="@drawable/widget_text_bg"/>
+    </RelativeLayout>
+
+</RelativeLayout>

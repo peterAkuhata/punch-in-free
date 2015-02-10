@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ScrollLayout">
+        <attr name="labelerClass" format="string"/>
+        <attr name="labelerFormat" format="string"/>
+        <attr name="childWidth" format="dimension"/>
+        <attr name="childHeight" format="dimension"/>
+    </declare-styleable>
+    
+	<declare-styleable name="EventListItem">
+		<attr name="description" format="string" />
+		<attr name="event_type" format="string" />
+		<attr name="date" format="string" />
+	</declare-styleable>
+
+    
+	<declare-styleable name="CheckBoxItem">
+		<attr name="value" format="string" />
+		<attr name="checked" format="boolean" />
+	</declare-styleable>
+		
+</resources>

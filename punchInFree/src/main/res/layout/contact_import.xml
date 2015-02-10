@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/textbox_filter"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:autoText="true"
+        android:capitalize="sentences"
+        android:hint="@string/hint_find_your_contacts"
+        android:inputType="text|textAutoComplete|textCapSentences"
+        android:maxLength="100"
+        android:paddingLeft="10dp"
+        android:paddingRight="70dp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/action_bar_background" >
+
+        <Button
+            android:id="@+id/button_import"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/gd_action_bar_item"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="@string/label_import"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/label_empty"
+            android:src="@drawable/action_bar_divider" />
+
+        <Button
+            android:id="@id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/gd_action_bar_item"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="@string/label_cancel"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/label_empty"
+            android:src="@drawable/action_bar_divider" />
+
+        <CheckBox
+            android:id="@+id/checkbox_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/label_select_all" android:textColor="#fff" android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_client_import"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_panel"
+        android:layout_below="@+id/textbox_filter"
+        android:listSelector="@drawable/gd_action_bar_item">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="60dp"
+        android:layout_height="69dp"
+        android:layout_alignBottom="@+id/textbox_filter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/action_bar_background" >
+
+        <Button
+            android:id="@+id/button_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gd_action_bar_item" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gd_action_bar_item"
+            android:contentDescription="@string/label_empty"
+            android:src="@drawable/gd_action_bar_search" />
+    </RelativeLayout>
+
+</RelativeLayout>
