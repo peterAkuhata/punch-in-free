@@ -1,5 +1,4 @@
-# Timesheet Punch In
-##Free version
+# Timesheet Punch In Free
 Timesheet PunchIn was built in order to allow contractors or employees to focus on their work, ensuring that the amount of time and effort spent on individual tasks during business hours are easily stored and reported on.
 
 With Timesheet PunchIn, you have the ability to add an overtime rate (for example, time and a half or double time), an hourly rate and a mileage rate on a per client basis to be calculated in your billing reports.
